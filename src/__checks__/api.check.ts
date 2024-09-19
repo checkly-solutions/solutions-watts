@@ -5,8 +5,8 @@ import { websiteGroup } from './resources/group';
 new ApiCheck('get-mpci-states', {
   name: 'GET Mpci States',
   group: websiteGroup,
-  degradedResponseTime: 10000,
-  maxResponseTime: 20000,
+  degradedResponseTime: 3000,
+  maxResponseTime: 8000,
   setupScript: {
     entrypoint: path.join(__dirname, './utils/setup.ts'),
   },
@@ -32,8 +32,8 @@ new ApiCheck('get-mpci-states', {
 new ApiCheck('get-mpci-counties', {
   name: 'GET Mpci Counties',
   group: websiteGroup,
-  degradedResponseTime: 10000,
-  maxResponseTime: 20000,
+  degradedResponseTime: 3000,
+  maxResponseTime: 8000,
   setupScript: {
     entrypoint: path.join(__dirname, './utils/setup.ts'),
   },
@@ -66,8 +66,8 @@ new ApiCheck('get-mpci-counties', {
 new ApiCheck('get-mpci-commodoties', {
   name: 'GET Mpci Commodoties',
   group: websiteGroup,
-  degradedResponseTime: 10000,
-  maxResponseTime: 20000,
+  degradedResponseTime: 3000,
+  maxResponseTime: 8000,
   setupScript: {
     entrypoint: path.join(__dirname, './utils/setup.ts'),
   },
