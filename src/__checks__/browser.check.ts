@@ -17,7 +17,7 @@ new BrowserCheck('homepage-browser-check', {
   alertChannels,
   group: websiteGroup,
   code: {
-    entrypoint: path.join(__dirname, '../specs/homepage.spec.ts'),
+    entrypoint: path.join(__dirname, '../tests/e2e/homepage.spec.ts'),
   },
   runParallel: true,
 });
