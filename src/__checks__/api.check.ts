@@ -52,7 +52,7 @@ new ApiCheck('get-mpci-counties', {
       "SalesClosingDate": "2023-01-31T00:00:00",
       "CommodityCode": 18
     }`,
-      bodyType: 'JSON',
+    bodyType: 'JSON',
     followRedirects: true,
     skipSSL: false,
     assertions: [
@@ -86,7 +86,7 @@ new ApiCheck('get-mpci-commodoties', {
     "CountyCode": 107,
     "SalesClosingDate": "2023-03-15T00:00:00"
     }`,
-      bodyType: 'JSON',
+    bodyType: 'JSON',
     followRedirects: true,
     skipSSL: false,
     assertions: [
