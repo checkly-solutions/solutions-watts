@@ -1,6 +1,6 @@
 import * as path from 'path';
 import { ApiCheck, AssertionBuilder } from 'checkly/constructs';
-import { websiteGroup } from './website-group.check';
+import { websiteGroup } from './resources/group';
 
 new ApiCheck('get-mpci-states', {
   name: 'GET Mpci States',

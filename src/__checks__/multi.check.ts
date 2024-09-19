@@ -1,6 +1,6 @@
 import * as path from 'path';
 import { MultiStepCheck } from 'checkly/constructs';
-import { smsChannel, emailChannel } from '../alert-channels';
+import { smsChannel, emailChannel } from './resources/alert-channels';
 
 const alertChannels = [smsChannel, emailChannel];
 
