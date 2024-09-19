@@ -46,12 +46,13 @@ new ApiCheck('get-mpci-counties', {
         value: 'Bearer {{{WATTS_TOKEN}}}',
       },
     ],
-    body: JSON.stringify({
-      ReinsuranceYear: 2023,
-      StateCode: 48,
-      SalesClosingDate: '2023-01-31T00:00:00',
-      CommodityCode: 18,
-    }),
+    body: `{
+      "ReinsuranceYear": 2023,
+      "StateCode": 48,
+      "SalesClosingDate": "2023-01-31T00:00:00",
+      "CommodityCode": 18
+    }`,
+      bodyType: 'JSON',
     followRedirects: true,
     skipSSL: false,
     assertions: [
@@ -79,12 +80,13 @@ new ApiCheck('get-mpci-commodoties', {
         value: 'Bearer {{{WATTS_TOKEN}}}',
       },
     ],
-    body: JSON.stringify({
-      ReinsuranceYear: 2023,
-      StateCode: 6,
-      CountyCode: 107,
-      SalesClosingDate: '2023-03-15T00:00:00',
-    }),
+    body: `{
+    "ReinsuranceYear": 2023,
+    "StateCode": 6,
+    "CountyCode": 107,
+    "SalesClosingDate": "2023-03-15T00:00:00"
+    }`,
+      bodyType: 'JSON',
     followRedirects: true,
     skipSSL: false,
     assertions: [
