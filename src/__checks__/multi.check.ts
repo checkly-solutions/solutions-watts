@@ -5,12 +5,12 @@ import { smsChannel, emailChannel } from './resources/alert-channels';
 const alertChannels = [smsChannel, emailChannel];
 
 // We can define multiple checks in a single *.check.ts file.
-// new MultiStepCheck('upload-check', {
-//   name: 'upload',
-//   runtimeId: '2024.02',
-//   alertChannels,
-//   code: {
-//     entrypoint: path.join(__dirname, 'm13-file-upload.spec.ts'),
-//   },
-//   runParallel: true,
-// });
+new MultiStepCheck('multi-file-upload-check', {
+  name: 'Multi File Upload',
+  runtimeId: '2024.02',
+  alertChannels,
+  code: {
+    entrypoint: path.join(__dirname, '../tests/multi/file-upload.spec.ts'),
+  },
+  runParallel: true,
+});
