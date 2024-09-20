@@ -1,7 +1,7 @@
 import * as path from 'path';
 import { BrowserCheck } from 'checkly/constructs';
 import { smsChannel, emailChannel } from './resources/alert-channels';
-import { websiteGroup } from './resources/group';
+import { uatGroup, prodGroup } from './resources/group';
 
 const alertChannels = [smsChannel, emailChannel];
 
@@ -9,7 +9,7 @@ const alertChannels = [smsChannel, emailChannel];
 new BrowserCheck('browser-homepage-check', {
   name: 'Browser Watts landing',
   alertChannels,
-  group: websiteGroup,
+  group: prodGroup,
   code: {
     entrypoint: path.join(__dirname, '../tests/e2e/homepage.spec.ts'),
   },

@@ -1,10 +1,11 @@
 import * as path from 'path';
 import { ApiCheck, AssertionBuilder } from 'checkly/constructs';
-import { websiteGroup } from './resources/group';
+import { uatGroup, prodGroup } from './resources/group';
 
 new ApiCheck('get-mpci-states', {
-  name: 'GET Mpci States',
-  group: websiteGroup,
+  name: 'GET Mpci States UAT',
+  group: uatGroup,
+  tags: ['uat', 'states', 'mpci'],
   degradedResponseTime: 3000,
   maxResponseTime: 8000,
   setupScript: {
@@ -30,8 +31,9 @@ new ApiCheck('get-mpci-states', {
 });
 
 new ApiCheck('get-mpci-counties', {
-  name: 'GET Mpci Counties',
-  group: websiteGroup,
+  name: 'GET Mpci Counties UAT',
+  group: uatGroup,
+  tags: ['uat', 'counties', 'mpci'],
   degradedResponseTime: 3000,
   maxResponseTime: 8000,
   setupScript: {
@@ -65,7 +67,8 @@ new ApiCheck('get-mpci-counties', {
 
 new ApiCheck('get-mpci-commodoties', {
   name: 'GET Mpci Commodoties',
-  group: websiteGroup,
+  group: uatGroup,
+  tags: ['uat', 'commodities', 'mpci'],
   degradedResponseTime: 3000,
   maxResponseTime: 8000,
   setupScript: {
@@ -96,3 +99,121 @@ new ApiCheck('get-mpci-commodoties', {
   },
   runParallel: true,
 });
+
+new ApiCheck('get-mpci-quoter-api-uat-health', {
+  name: 'GET MPCI Quoter API UAT Health',
+  group: uatGroup,
+  muted: false,
+  shouldFail: false,
+  runParallel: true,
+  locations: ['us-east-2', 'us-west-1'],
+  tags: ['uat', 'health'],
+  frequency: 5,
+  environmentVariables: [],
+  maxResponseTime: 20000,
+  degradedResponseTime: 5000,
+  request: {
+    url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/health',
+    method: 'GET',
+    followRedirects: true,
+    skipSSL: false,
+    assertions: [AssertionBuilder.statusCode().equals(200)],
+    body: ``,
+    bodyType: 'NONE',
+    headers: [],
+    queryParameters: [],
+    basicAuth: {
+      username: '',
+      password: '',
+    },
+  },
+});
+
+new ApiCheck('get-brisk-analytics-api-uat-health', {
+  name: 'GET Brisk Analytics API UAT Health',
+  group: uatGroup,
+  muted: false,
+  shouldFail: false,
+  runParallel: true,
+  locations: ['us-east-2', 'us-west-1'],
+  tags: ['uat', 'health'],
+  frequency: 5,
+  environmentVariables: [],
+  maxResponseTime: 20000,
+  degradedResponseTime: 5000,
+  request: {
+    url: 'https://briskanalyticsapi-uat.wattsandassociates.com/api/health',
+    method: 'GET',
+    followRedirects: true,
+    skipSSL: false,
+    assertions: [AssertionBuilder.statusCode().equals(200)],
+    body: ``,
+    bodyType: 'NONE',
+    headers: [],
+    queryParameters: [],
+    basicAuth: {
+      username: '',
+      password: '',
+    },
+  },
+});
+
+new ApiCheck('get-brisk-pass-api-uat-health', {
+  name: 'GET Brisk Pass API UAT Health',
+  group: uatGroup,
+  muted: false,
+  shouldFail: false,
+  runParallel: true,
+  locations: ['us-east-2', 'us-west-1'],
+  tags: ['uat', 'health'],
+  frequency: 5,
+  environmentVariables: [],
+  maxResponseTime: 20000,
+  degradedResponseTime: 5000,
+  request: {
+    url: 'https://briskpassapi-uat.wattsandassociates.com/api/health',
+    method: 'GET',
+    followRedirects: true,
+    skipSSL: false,
+    assertions: [AssertionBuilder.statusCode().equals(200)],
+    body: ``,
+    bodyType: 'NONE',
+    headers: [],
+    queryParameters: [],
+    basicAuth: {
+      username: '',
+      password: '',
+    },
+  },
+});
+
+new ApiCheck('get-mpci-quoter-api-health', {
+  name: 'GET MPCI Quoter API Health',
+  group: prodGroup,
+  muted: false,
+  shouldFail: false,
+  runParallel: true,
+  locations: ['us-east-2', 'us-west-1'],
+  tags: ['prod', 'health', 'quoter'],
+  frequency: 5,
+  environmentVariables: [],
+  maxResponseTime: 20000,
+  degradedResponseTime: 5000,
+  request: {
+    url: 'https://mpciquoterapi.wattsandassociates.com/api/health',
+    method: 'GET',
+    followRedirects: true,
+    skipSSL: false,
+    assertions: [
+      AssertionBuilder.statusCode().equals(200),
+    ],
+    body: ``,
+    bodyType: 'NONE',
+    headers: [],
+    queryParameters: [],
+    basicAuth: {
+      username: '',
+      password: '',
+    },
+  }
+})
