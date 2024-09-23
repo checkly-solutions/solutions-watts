@@ -1,5 +1,5 @@
 import * as path from 'path';
-import { ApiCheck, AssertionBuilder } from 'checkly/constructs';
+import { ApiCheck, AssertionBuilder, Frequency } from 'checkly/constructs';
 import { uatGroup, prodGroup } from './resources/group';
 
 new ApiCheck('get-mpci-states', {
@@ -216,4 +216,67 @@ new ApiCheck('get-mpci-quoter-api-health', {
       password: '',
     },
   }
+})
+
+new ApiCheck('post--api-tenantId-Analytics-CalculateBackcasts', {
+  name: 'POST Calculate backcasts for the specified insurable units using multiple plans and prices.',
+  runParallel: true,
+  locations: ['us-east-2', 'us-west-1'],
+  tags: ['api', 'uat', 'analytics', 'mpci'],
+  frequency: Frequency.EVERY_5M,
+  environmentVariables: [],
+  maxResponseTime: 8000,
+  degradedResponseTime: 1000,
+  request: {
+    url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/{{tenantId}}/Analytics/CalculateBackcasts',
+    method: 'POST',
+    headers: [
+      {
+        key: 'Authorization',
+        value: 'Bearer WATTS_TOKEN',
+      },
+    ],
+    followRedirects: true,
+    skipSSL: false,
+    assertions: [
+      AssertionBuilder.statusCode().equals(200),
+      AssertionBuilder.jsonBody('$[0].id').isNotNull(),
+    ],
+    body: '',
+    bodyType: 'JSON',
+    headers: [],
+    queryParameters: [],
+  },
+})
+
+
+new ApiCheck('post--api-tenantId-Analytics-CalculateIndemnityScenarios', {
+  name: 'POST Calculate Indemnity Scenarios',
+  runParallel: true,
+  locations: ['us-east-2', 'us-west-1'],
+  tags: ['api', 'uat', 'analytics', 'mpci'],
+  frequency: Frequency.EVERY_5M,
+  environmentVariables: [],
+  maxResponseTime: 8000,
+  degradedResponseTime: 1000,
+  request: {
+    url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/{{tenantId}}/Analytics/CalculateIndemnityScenarios',
+    method: 'POST',
+    headers: [
+      {
+        key: 'Authorization',
+        value: 'Bearer WATTS_TOKEN',
+      },
+    ],
+    followRedirects: true,
+    skipSSL: false,
+    assertions: [
+      AssertionBuilder.statusCode().equals(200),
+      AssertionBuilder.jsonBody('$[0].id').isNotNull(),
+    ],
+    body: '',
+    bodyType: 'JSON',
+    headers: [],
+    queryParameters: [],
+  },
 })
