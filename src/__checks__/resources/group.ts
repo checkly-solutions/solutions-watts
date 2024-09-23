@@ -1,12 +1,12 @@
 import { AlertEscalationBuilder, CheckGroup, RetryStrategyBuilder } from 'checkly/constructs';
-import { smsChannel, emailChannel } from './alert-channels';
-const alertChannels = [smsChannel, emailChannel];
+import { emailChannel } from './alert-channels';
+const alertChannels = [emailChannel];
 
 export const uatGroup = new CheckGroup('uat-check-group-1', {
   name: 'UAT - Watts Group',
-  activated: true,
+  activated: false,
   muted: false,
-  frequency: 5,
+  frequency: 15,
   runtimeId: '2024.02',
   locations: ['us-east-1', 'us-west-1'],
   tags: ['cli', 'uat'],
@@ -27,9 +27,9 @@ export const uatGroup = new CheckGroup('uat-check-group-1', {
 
 export const prodGroup = new CheckGroup('prod-check-group-1', {
   name: 'PROD - Watts Group',
-  activated: true,
+  activated: false,
   muted: false,
-  frequency: 5,
+  frequency: 15,
   runtimeId: '2024.02',
   locations: ['us-east-1', 'us-west-1'],
   tags: ['cli', 'prod'],
