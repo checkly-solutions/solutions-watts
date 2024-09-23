@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path')
 
 // Path to your .txt file
-const filePath = path.join(__dirname, '2023-Sample-M13-File.txt'); // Update to .txt
+const filePath = path.join(__dirname, 'payloadPace.txt'); // Update to .txt
 
 // Read the file as binary data
 const fileData = fs.readFileSync(filePath);

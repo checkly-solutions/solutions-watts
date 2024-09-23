@@ -40,9 +40,9 @@ test('Verify Excel file exists', async ({ request }) => {
     expect(tokenResponse).toBeOK();
 
     const responseBody = await tokenResponse.json();
-    console.log('tokenResponse', responseBody);
+    // console.log('tokenResponse', responseBody);
 
-    token = responseBody.access_token; // Save token for later use
+    token = responseBody.access_token; 
   });
 
   await test.step('POST submit file for upload', async () => {
@@ -81,6 +81,6 @@ test('Verify Excel file exists', async ({ request }) => {
       }
     );
     expect(fileUploadResponse.ok()).toBeTruthy(); // Validate the response
-    console.log("fileUploadResponse", fileUploadResponse)
+    // console.log("fileUploadResponse", fileUploadResponse)
   });
 });
