@@ -6,7 +6,7 @@ new ApiCheck('get-mpci-states', {
   name: 'GET Mpci States UAT',
   group: uatGroup,
   tags: ['uat', 'states', 'mpci'],
-  degradedResponseTime: 3000,
+  degradedResponseTime: 1000,
   maxResponseTime: 8000,
   setupScript: {
     entrypoint: path.join(__dirname, './utils/setup.ts'),
@@ -14,12 +14,12 @@ new ApiCheck('get-mpci-states', {
   request: {
     url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/4001/Lookups/GetMpciStates?ReinsuranceYear=2024',
     method: 'GET',
-    headers: [
-      {
-        key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
-      },
-    ],
+    // headers: [
+    //   {
+    //     key: 'Authorization',
+    //     value: 'Bearer {{{WATTS_TOKEN}}}',
+    //   },
+    // ],
     followRedirects: true,
     skipSSL: false,
     assertions: [
@@ -40,14 +40,14 @@ new ApiCheck('get-mpci-counties', {
     entrypoint: path.join(__dirname, './utils/setup.ts'),
   },
   request: {
-    url: 'https://mpciquoterapi-uat.wattsandassociates.com/Lookups/GetMpciCounties?ReinsuranceYear=2024&StateCode=46',
+    url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/4001/Lookups/GetMpciCounties?ReinsuranceYear=2024&StateCode=46',
     method: 'GET',
-    headers: [
-      {
-        key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
-      },
-    ],
+    // headers: [
+    //   {
+    //     key: 'Authorization',
+    //     value: 'Bearer {{{WATTS_TOKEN}}}',
+    //   },
+    // ],
     body: `{
       "ReinsuranceYear": 2023,
       "StateCode": 48,
@@ -75,14 +75,14 @@ new ApiCheck('get-mpci-commodoties', {
     entrypoint: path.join(__dirname, './utils/setup.ts'),
   },
   request: {
-    url: 'https://mpciquoterapi-uat.wattsandassociates.com/Lookups/GetMpciCommodities?ReinsuranceYear=2025&StateCode=1&CountyCode=1&IncludePriorYearData=false',
+    url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/4001/Lookups/GetMpciCommodities?ReinsuranceYear=2025&StateCode=1&CountyCode=1&IncludePriorYearData=false',
     method: 'GET',
-    headers: [
-      {
-        key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
-      },
-    ],
+    // headers: [
+    //   {
+    //     key: 'Authorization',
+    //     value: 'Bearer {{{WATTS_TOKEN}}}',
+    //   },
+    // ],
     body: `{
     "ReinsuranceYear": 2023,
     "StateCode": 6,

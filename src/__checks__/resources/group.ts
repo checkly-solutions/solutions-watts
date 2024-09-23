@@ -4,7 +4,7 @@ const alertChannels = [smsChannel, emailChannel];
 
 export const uatGroup = new CheckGroup('uat-check-group-1', {
   name: 'UAT - Watts Group',
-  activated: false,
+  activated: true,
   muted: false,
   frequency: 5,
   runtimeId: '2024.02',
@@ -27,7 +27,7 @@ export const uatGroup = new CheckGroup('uat-check-group-1', {
 
 export const prodGroup = new CheckGroup('prod-check-group-1', {
   name: 'PROD - Watts Group',
-  activated: false,
+  activated: true,
   muted: false,
   frequency: 5,
   runtimeId: '2024.02',

@@ -5,12 +5,13 @@ import path from 'path';
 import { textFileBase64 } from '../resources/textFile';
 
 let token;
-let tempFilePath
+let tempFilePath;
+let binaryData;
+let fileContent;
 
 test.beforeAll(async () => {
-  console.log('textFileBase64', textFileBase64);
   // Decode the Base64 string to binary data
-  const binaryData = Buffer.from(textFileBase64, 'base64');
+  binaryData = Buffer.from(textFileBase64, 'base64');
 
   // Save the Text file in the current directory
   tempFilePath = path.join('temp_test_text.txt');
@@ -18,10 +19,11 @@ test.beforeAll(async () => {
 
   // Verify the file exists by reading it back
   const fileExists = fs.existsSync(tempFilePath);
-  console.log('Does the file exist? ', fileExists);
 
   // Ensure the file exists as expected
   expect(fileExists).toBe(true);
+
+  fileContent = fs.readFileSync(tempFilePath, 'utf-8');
 });
 
 test('Verify Excel file exists', async ({ request }) => {
@@ -40,12 +42,12 @@ test('Verify Excel file exists', async ({ request }) => {
     expect(tokenResponse).toBeOK();
 
     const responseBody = await tokenResponse.json();
-    console.log('tokenResponse', responseBody);
 
-    token = responseBody.access_token; // Save token for later use
+    token = responseBody.access_token;
   });
 
   await test.step('POST submit file for upload', async () => {
+    console.log('fileContent ', fileContent);
     const fileUploadResponse = await request.post(
       'https://mpciquoterapi-uat.wattsandassociates.com/api/4001/MpciQuoting/CalculatePolicyQuotes?PassSchemaNumber=1&PassSchemaYear=2023',
       {
@@ -53,7 +55,11 @@ test('Verify Excel file exists', async ({ request }) => {
           Authorization: `Bearer ${token}`,
         },
         multipart: {
-          M13Data: tempFilePath,
+          m13Data: {
+            name: '2023 Sample M13 File.txt', // File name
+            mimeType: 'text/plain', // Explicitly set the mime type
+            buffer: Buffer.from(fileContent), // Converting content to buffer
+          },
           quoteParameters: JSON.stringify({
             reinsuranceYearOverride: 2023,
             prices: [
@@ -81,6 +87,6 @@ test('Verify Excel file exists', async ({ request }) => {
       }
     );
     expect(fileUploadResponse.ok()).toBeTruthy(); // Validate the response
-    console.log("fileUploadResponse", fileUploadResponse)
+    // console.log("fileUploadResponse", fileUploadResponse)
   });
 });
