@@ -10,7 +10,11 @@ export const uatGroup = new CheckGroup('uat-check-group-1', {
   runtimeId: '2024.02',
   locations: ['us-east-1', 'us-west-1'],
   tags: ['cli', 'uat'],
-  environmentVariables: [],
+  environmentVariables: [
+    { key: 'baseUrlQuoter', value: 'mpciquoterapi-uat.wattsandassociates.com', locked: false, secret: false },
+    { key: 'tenantID', value: '4001', locked: false, secret: false },
+    { key: 'lookupReinsuranceYear', value: '2024', locked: false, secret: false },
+  ],
   apiCheckDefaults: {},
   concurrency: 100,
   alertChannels,
