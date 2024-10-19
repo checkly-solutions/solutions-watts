@@ -465,7 +465,6 @@ new ApiCheck('post--api-tenantId-Analytics-CalculateBackcasts', {
     ],
     body: '',
     bodyType: 'JSON',
-    headers: [],
     queryParameters: [],
   },
 })
@@ -497,7 +496,6 @@ new ApiCheck('post--api-tenantId-Analytics-CalculateIndemnityScenarios', {
     ],
     body: '',
     bodyType: 'JSON',
-    headers: [],
     queryParameters: [],
   },
 })
