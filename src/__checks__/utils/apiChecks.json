@@ -1,0 +1,906 @@
+[
+  {
+    "name": "POST - CalculateBackcasts",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Analytics/CalculateBackcasts",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciUnitStructures",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciUnitStructures",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciInsuranceOptions",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsuranceOptions",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciInsuranceOptions",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsuranceOptions",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciAssociatedPlans",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciAssociatedPlans",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciAssociatedPlans",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciAssociatedPlans",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciSalesClosingDates",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciSalesClosingDates",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciStates",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciStates",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciCounties",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCounties",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPractices",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPractices",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciCommodities",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCommodities",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciTypes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTypes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPractices",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPractices",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciTYieldHistory",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTYieldHistory",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciSubCountyCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciSubCountyCodes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCoverageTypeCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCoverageTypeCodes",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciMultipleCroppingAvailability",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciMultipleCroppingAvailability",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciCoverageTypeCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCoverageTypeCodes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciProgramIndicatorCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciProgramIndicatorCodes",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciMultipleCroppingAvailability",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciMultipleCroppingAvailability",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciTownships",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTownships",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciTownships",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTownships",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciRanges",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciRanges",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciUnitOfMeasure",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciUnitOfMeasure",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciContractPrice",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciContractPrice",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPriceDiscoveryInfo",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceDiscoveryInfo",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciAllCommoditiesTypes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciAllCommoditiesTypes",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciRangeClasses",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciRangeClasses",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciOrganicPractices",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciOrganicPractices",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCountyExpectedYields",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCountyExpectedYields",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCottonseedPublishedValues",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCottonseedPublishedValues",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciIntendedUses",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciIntendedUses",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciRainfallIndexIntervalDetails",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciRainfallIndexIntervalDetails",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciYieldDollarParameters",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciYieldDollarParameters",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCommodityInsuranceOffers",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCommodityInsuranceOffers",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciStateNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciStateNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciInsuranceOptionCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsuranceOptionCodes",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCountyNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCountyNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciCommodityNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCommodityNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPracticeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPracticeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPracticeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPracticeNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciTypeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTypeNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciTypeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTypeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciInsuranceOptionNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsuranceOptionNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciProductionRecordTypeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciProductionRecordTypeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciIntendedUseNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciIntendedUseNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciEntityTypeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciEntityTypeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciOrganicPracticeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciOrganicPracticeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciIrrigationPracticeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciIrrigationPracticeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetCountiesByGrid",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetCountiesByGrid",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetIntervalsCountyBaseValue",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetIntervalsCountyBaseValue",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - CalculateWfrpPremium",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/MpciQuoting/CalculateWfrpPremium",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetInsurableUnits",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/MpciQuoting/GetInsurableUnits",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - CalculateUnitQuotes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/MpciQuoting/CalculateUnitQuotes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciStates",
+    "request": {
+      "url": "https://mpciquoterapi-uat.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciStates",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciIrrigationPractices",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciIrrigationPractices",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciProgramIndicatorCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciProgramIndicatorCodes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciTypes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTypes",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPricingDefaults",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPricingDefaults",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetGrids",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetGrids",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciContractPrice",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciContractPrice",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciYieldTypeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciYieldTypeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciContiguousCounties",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciContiguousCounties",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciInsurancePlanNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsurancePlanNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - CalculateUnitYields",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantID}/Utilities/CalculateUnitYields",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - CalculateIndemnityScenarios",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Analytics/CalculateIndemnityScenarios",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetStateCentroids",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetStateCentroids",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciStateNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciStateNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciIntervalNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciIntervalNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciInsurancePlans",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsurancePlans",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCommodityNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCommodityNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCroppingPractices",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCroppingPractices",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciCountyNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCountyNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPriceDiscoveryInfo",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceDiscoveryInfo",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPreventedPlantAvailability",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPreventedPlantAvailability",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciSections",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciSections",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPreventedPlantAvailability",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPreventedPlantAvailability",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciDollarAmountOfInsurance",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciDollarAmountOfInsurance",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciInsuranceOptionNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsuranceOptionNames",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciTaxIdTypeNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTaxIdTypeNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPriceAndVolatility",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceAndVolatility",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPriceRounding",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceRounding",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciUnitOfMeasure",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciUnitOfMeasure",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciCoverageLevels",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCoverageLevels",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetCountyCentroids",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetCountyCentroids",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciTYieldHistory",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTYieldHistory",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - CalculatePolicyQuotes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/MpciQuoting/CalculatePolicyQuotes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPriceElectionRange",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceElectionRange",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciSections",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciSections",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciTYield",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTYield",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciAllCommoditiesTypes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciAllCommoditiesTypes",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetBulkMpciPricingDefaults",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetBulkMpciPricingDefaults",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCounties",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCounties",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciTYield",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciTYield",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetRainfallReinsuranceYears",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetRainfallReinsuranceYears",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPriceTableAuxiliaryData",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceTableAuxiliaryData",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciDollarAmountOfInsurance",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciDollarAmountOfInsurance",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciSubCountyCodes",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciSubCountyCodes",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCoverageLevels",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCoverageLevels",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciPricingDefaults",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPricingDefaults",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciUnitStructures",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciUnitStructures",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetBulkMpciInsuranceOptions",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetBulkMpciInsuranceOptions",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciSalesClosingDates",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciSalesClosingDates",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciInsurancePlanNames",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsurancePlanNames",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciCommodities",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciCommodities",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciRanges",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciRanges",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPlanElections",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPlanElections",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - GetMpciInsurancePlans",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciInsurancePlans",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPriceElectionRange",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceElectionRange",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - GetMpciPriceAndVolatility",
+    "request": {
+      "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceAndVolatility",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "POST - token",
+    "request": {
+      "url": "https://dev-4eqboz3bezyl3bwn.us.auth0.com/oauth/token",
+      "method": "POST",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - briskanalyticsapi - health",
+    "request": {
+      "url": "https://briskanalyticsapi.wattsandassociates.com/api/health",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  },
+  {
+    "name": "GET - briskpassapi - health",
+    "request": {
+      "url": "https://briskpassapi.wattsandassociates.com/api/health",
+      "method": "GET",
+      "headers": "Bearer {{{WATTS_TOKEN}}}"
+    }
+  }
+]
