@@ -1,9 +1,9 @@
 import * as path from 'path';
 import { BrowserCheck } from 'checkly/constructs';
-import { smsChannel, emailChannel } from './resources/alert-channels';
-import { uatGroup, prodGroup } from './resources/group';
+import { emailChannel } from './resources/alert-channels';
+import { prodGroup } from './resources/group';
 
-const alertChannels = [smsChannel, emailChannel];
+const alertChannels = [emailChannel];
 
 // We can define multiple checks in a single *.check.ts file.
 new BrowserCheck('browser-homepage-check', {
