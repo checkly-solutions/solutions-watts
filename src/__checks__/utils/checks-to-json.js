@@ -13,6 +13,7 @@ const tenants = [];
 
 const url1 = 'https://api.checklyhq.com/v1/checks?limit=100&page=1';
 const url2 = 'https://api.checklyhq.com/v1/checks?limit=100&page=2';
+
 const headers = {
   Authorization: `Bearer ${apiKey}`,
   accept: 'application/json',
@@ -77,14 +78,21 @@ async function fetchChecks(url) {
           bodyType: 'JSON',
           followRedirects: true,
           skipSSL: false,
+          assertions: [AssertionBuilder.statusCode().equals(200)],
+
         },
-        assertions: [AssertionBuilder.statusCode().equals(200)],
     })`);
     }
 
     checks.forEach((check) => {
       if (check.checkType === 'API' && check.activated === false) {
         let tags = [];
+        let url
+        // Replace tenantid substring with 2001
+        
+        if (check.request.url.includes('{tenantId}')) {
+          check.request.url = check.request.url.replace('{tenantId}', '2001');
+        }
 
         // Tag handle
         tags.push(check.request.method.toLowerCase());
@@ -128,7 +136,7 @@ async function main(fetchChecks, writeChecks) {
   await fetchChecks(url2);
 
   // Write each array to separate files
-  await writeChecks(analyticsChecks, 'analyticsChecks', dependencyContent);
+  // await writeChecks(analyticsChecks, 'analyticsChecks', dependencyContent);
   await writeChecks(lookupChecks, 'lookupChecks', dependencyContent);
   await writeChecks(apiChecks, 'apiChecks', dependencyContent);
 }
