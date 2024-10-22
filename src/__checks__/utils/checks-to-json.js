@@ -24,12 +24,21 @@ let analyticsChecks = [];
 let lookupChecks = [];
 let apiChecks = [];
 
-function writeChecks(checkArray) {
-  fs.writeFile(`${checkArray}.check.ts'`, (checkArray, null, 2), (err) => {
+function writeChecks(checkArray, fileName, dependencyContent) {
+  // Join check array and write to file
+  fs.writeFile(`../MPCI/${fileName}.check.ts`, dependencyContent, (err) => {
+    if (err) {
+      console.error('Error writing file:', err);
+    } else {
+      console.log('File written successfully');
+    }
+  });
+
+  fs.appendFile(`../MPCI/${fileName}.check.ts`, checkArray.join('\n'), (err) => {
     if (err) {
       console.error('Error writing to file:', err);
     } else {
-      console.log(`${checkArray} have been written to ${checkArray}.check.ts`);
+      console.log(`${fileName} checks have been written to ${fileName}.check.ts`);
     }
   });
 }
@@ -39,6 +48,8 @@ async function fetchChecks(url) {
     const response = await axios.get(url, { headers });
     const checks = response.data;
 
+    let checksArray;
+
     function createCheck(check, tags, checksArray) {
       let lastString = check.request.url.split('/').pop();
       let id = `${check.request.method}-${lastString}-2001`;
@@ -46,13 +57,17 @@ async function fetchChecks(url) {
       let url = check.request.url;
       let method = check.request.method;
 
-      checksArray.push(`new ApiCheck('${id.toLowerCase()}', {{
-        name: ${name.toLowerCase()},
+      checksArray.push(`new ApiCheck('${id.toLowerCase()}', {
+        name: '${name.toLowerCase()}',
         tags: [${tags.map((tag) => `"${tag}"`).join(', ')}],
-        setupScript: './utils/setup.ts',
+        setupScript: {
+          entrypoint: path.join(__dirname, '../utils/setup.ts'),
+          },
+        frequency: 5,
+        activated: true,
         request: {
-          url: ${url},
-          method: ${method},
+          url: '${url}',
+          method: '${method}',
           headers: [
             {
               key: 'Authorization',
@@ -64,8 +79,7 @@ async function fetchChecks(url) {
           skipSSL: false,
         },
         assertions: [AssertionBuilder.statusCode().equals(200)],
-      }
-    });`);
+    })`);
     }
 
     checks.forEach((check) => {
@@ -88,27 +102,35 @@ async function fetchChecks(url) {
           createCheck(check, tags, lookupChecks);
         }
 
-        createCheck(check, tags, apiChecks);
+        if (!check.request.url.includes('Analytics') && !check.request.url.includes('Lookups')) {
+          createCheck(check, tags, apiChecks);
+        }
       }
     });
 
     console.log('apiChecks ' + apiChecks);
     console.log('lookupChecks ' + lookupChecks);
     console.log('analyticsChecks ' + analyticsChecks);
+
+    return apiChecks, lookupChecks, analyticsChecks;
   } catch (error) {
-    console.error('Error making the request:', error.message);
-    console.log('accountID, ' + accountID);
-    console.log('apiKey, ' + apiKey);
+    console.error('Error fetching checks:', error.message);
   }
 }
 
-async function main() {
+async function main(fetchChecks, writeChecks) {
+  const dependencyContent = `import * as path from 'path';
+  import { ApiCheck, AssertionBuilder, Frequency } from 'checkly/constructs';
+  
+  `;
+
   await fetchChecks(url1);
   await fetchChecks(url2);
 
-  await writeChecks(analyticsChecks);
-  await writeChecks(lookupChecks);
-  await writeChecks(apiChecks);
+  // Write each array to separate files
+  await writeChecks(analyticsChecks, 'analyticsChecks', dependencyContent);
+  await writeChecks(lookupChecks, 'lookupChecks', dependencyContent);
+  await writeChecks(apiChecks, 'apiChecks', dependencyContent);
 }
 
-main();
+main(fetchChecks, writeChecks);
