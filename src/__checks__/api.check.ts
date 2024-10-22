@@ -314,9 +314,7 @@ new ApiCheck('calculate-backcasts', {
     followRedirects: true,
     skipSSL: false,
     // This endpoint is unauthorized for this tenant. Test is failing
-    assertions: [
-      AssertionBuilder.statusCode().equals(401)
-    ],
+    assertions: [AssertionBuilder.statusCode().equals(401)],
   },
   runParallel: true,
 });
@@ -425,9 +423,7 @@ new ApiCheck('get-mpci-quoter-api-health', {
     method: 'GET',
     followRedirects: true,
     skipSSL: false,
-    assertions: [
-      AssertionBuilder.statusCode().equals(200),
-    ],
+    assertions: [AssertionBuilder.statusCode().equals(200)],
     body: ``,
     bodyType: 'NONE',
     headers: [],
@@ -436,8 +432,8 @@ new ApiCheck('get-mpci-quoter-api-health', {
       username: '',
       password: '',
     },
-  }
-})
+  },
+});
 
 new ApiCheck('post--api-tenantId-Analytics-CalculateBackcasts', {
   name: 'POST Calculate backcasts for the specified insurable units using multiple plans and prices.',
@@ -467,8 +463,7 @@ new ApiCheck('post--api-tenantId-Analytics-CalculateBackcasts', {
     bodyType: 'JSON',
     queryParameters: [],
   },
-})
-
+});
 
 new ApiCheck('post--api-tenantId-Analytics-CalculateIndemnityScenarios', {
   name: 'POST Calculate Indemnity Scenarios',
@@ -498,4 +493,4 @@ new ApiCheck('post--api-tenantId-Analytics-CalculateIndemnityScenarios', {
     bodyType: 'JSON',
     queryParameters: [],
   },
-})
+});

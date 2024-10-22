@@ -764,7 +764,11 @@
     "request": {
       "url": "https://mpciquoterapi.wattsandassociates.com/api/{tenantId}/Lookups/GetMpciPriceTableAuxiliaryData",
       "method": "GET",
-      "headers": "Bearer {{{WATTS_TOKEN}}}"
+      "headers": "Bearer {{{WATTS_TOKEN}}}",
+      "assertion": {
+        "key": "someKey",
+        "value": "someValue"
+      }
     }
   },
   {
