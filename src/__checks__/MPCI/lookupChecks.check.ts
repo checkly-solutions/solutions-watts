@@ -8,7 +8,7 @@ new ApiCheck('get-getmpciunitstructures-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciUnitStructures',
     method: 'GET',
@@ -31,7 +31,7 @@ new ApiCheck('get-getmpciinsuranceoptions-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsuranceOptions',
     method: 'GET',
@@ -54,7 +54,7 @@ new ApiCheck('post-getmpciinsuranceoptions-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsuranceOptions',
     method: 'POST',
@@ -77,7 +77,7 @@ new ApiCheck('get-getmpciassociatedplans-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciAssociatedPlans',
     method: 'GET',
@@ -100,7 +100,7 @@ new ApiCheck('post-getmpciassociatedplans-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciAssociatedPlans',
     method: 'POST',
@@ -123,7 +123,7 @@ new ApiCheck('get-getmpcisalesclosingdates-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciSalesClosingDates',
     method: 'GET',
@@ -146,7 +146,7 @@ new ApiCheck('get-getmpcistates-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciStates',
     method: 'GET',
@@ -169,7 +169,7 @@ new ApiCheck('post-getmpcicounties-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCounties',
     method: 'POST',
@@ -192,7 +192,7 @@ new ApiCheck('get-getmpcipractices-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPractices',
     method: 'GET',
@@ -215,7 +215,7 @@ new ApiCheck('post-getmpcicommodities-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCommodities',
     method: 'POST',
@@ -238,7 +238,7 @@ new ApiCheck('post-getmpcitypes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTypes',
     method: 'POST',
@@ -261,7 +261,7 @@ new ApiCheck('post-getmpcipractices-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPractices',
     method: 'POST',
@@ -284,7 +284,7 @@ new ApiCheck('post-getmpcityieldhistory-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTYieldHistory',
     method: 'POST',
@@ -307,7 +307,7 @@ new ApiCheck('post-getmpcisubcountycodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciSubCountyCodes',
     method: 'POST',
@@ -330,7 +330,7 @@ new ApiCheck('get-getmpcicoveragetypecodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCoverageTypeCodes',
     method: 'GET',
@@ -353,7 +353,7 @@ new ApiCheck('get-getmpcimultiplecroppingavailability-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciMultipleCroppingAvailability',
     method: 'GET',
@@ -376,7 +376,7 @@ new ApiCheck('post-getmpcicoveragetypecodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCoverageTypeCodes',
     method: 'POST',
@@ -399,7 +399,7 @@ new ApiCheck('get-getmpciprogramindicatorcodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciProgramIndicatorCodes',
     method: 'GET',
@@ -422,7 +422,7 @@ new ApiCheck('post-getmpcimultiplecroppingavailability-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciMultipleCroppingAvailability',
     method: 'POST',
@@ -445,7 +445,7 @@ new ApiCheck('post-getmpcitownships-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTownships',
     method: 'POST',
@@ -468,7 +468,7 @@ new ApiCheck('get-getmpcitownships-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTownships',
     method: 'GET',
@@ -491,7 +491,7 @@ new ApiCheck('post-getmpciranges-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciRanges',
     method: 'POST',
@@ -514,7 +514,7 @@ new ApiCheck('get-getmpciunitofmeasure-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciUnitOfMeasure',
     method: 'GET',
@@ -537,7 +537,7 @@ new ApiCheck('post-getmpcicontractprice-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciContractPrice',
     method: 'POST',
@@ -560,7 +560,7 @@ new ApiCheck('get-getmpcipricediscoveryinfo-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceDiscoveryInfo',
     method: 'GET',
@@ -583,7 +583,7 @@ new ApiCheck('get-getmpciallcommoditiestypes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciAllCommoditiesTypes',
     method: 'GET',
@@ -606,7 +606,7 @@ new ApiCheck('get-getmpcirangeclasses-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciRangeClasses',
     method: 'GET',
@@ -629,7 +629,7 @@ new ApiCheck('get-getmpciorganicpractices-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciOrganicPractices',
     method: 'GET',
@@ -652,7 +652,7 @@ new ApiCheck('get-getmpcicountyexpectedyields-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCountyExpectedYields',
     method: 'GET',
@@ -675,7 +675,7 @@ new ApiCheck('get-getmpcicottonseedpublishedvalues-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCottonseedPublishedValues',
     method: 'GET',
@@ -698,7 +698,7 @@ new ApiCheck('get-getmpciintendeduses-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciIntendedUses',
     method: 'GET',
@@ -721,7 +721,7 @@ new ApiCheck('get-getmpcirainfallindexintervaldetails-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciRainfallIndexIntervalDetails',
     method: 'GET',
@@ -744,7 +744,7 @@ new ApiCheck('get-getmpciyielddollarparameters-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciYieldDollarParameters',
     method: 'GET',
@@ -767,7 +767,7 @@ new ApiCheck('get-getmpcicommodityinsuranceoffers-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCommodityInsuranceOffers',
     method: 'GET',
@@ -790,7 +790,7 @@ new ApiCheck('post-getmpcistatenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciStateNames',
     method: 'POST',
@@ -813,7 +813,7 @@ new ApiCheck('get-getmpciinsuranceoptioncodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsuranceOptionCodes',
     method: 'GET',
@@ -836,7 +836,7 @@ new ApiCheck('get-getmpcicountynames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCountyNames',
     method: 'GET',
@@ -859,7 +859,7 @@ new ApiCheck('post-getmpcicommoditynames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCommodityNames',
     method: 'POST',
@@ -882,7 +882,7 @@ new ApiCheck('get-getmpcipracticenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPracticeNames',
     method: 'GET',
@@ -905,7 +905,7 @@ new ApiCheck('post-getmpcipracticenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPracticeNames',
     method: 'POST',
@@ -928,7 +928,7 @@ new ApiCheck('post-getmpcitypenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTypeNames',
     method: 'POST',
@@ -951,7 +951,7 @@ new ApiCheck('get-getmpcitypenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTypeNames',
     method: 'GET',
@@ -974,7 +974,7 @@ new ApiCheck('get-getmpciinsuranceoptionnames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsuranceOptionNames',
     method: 'GET',
@@ -997,7 +997,7 @@ new ApiCheck('get-getmpciproductionrecordtypenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciProductionRecordTypeNames',
     method: 'GET',
@@ -1020,7 +1020,7 @@ new ApiCheck('get-getmpciintendedusenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciIntendedUseNames',
     method: 'GET',
@@ -1043,7 +1043,7 @@ new ApiCheck('get-getmpcientitytypenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciEntityTypeNames',
     method: 'GET',
@@ -1066,7 +1066,7 @@ new ApiCheck('get-getmpciorganicpracticenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciOrganicPracticeNames',
     method: 'GET',
@@ -1089,7 +1089,7 @@ new ApiCheck('get-getmpciirrigationpracticenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciIrrigationPracticeNames',
     method: 'GET',
@@ -1112,7 +1112,7 @@ new ApiCheck('get-getcountiesbygrid-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetCountiesByGrid',
     method: 'GET',
@@ -1135,7 +1135,7 @@ new ApiCheck('get-getintervalscountybasevalue-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetIntervalsCountyBaseValue',
     method: 'GET',
@@ -1158,7 +1158,7 @@ new ApiCheck('post-getmpcistates-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi-uat.wattsandassociates.com/api/2001/Lookups/GetMpciStates',
     method: 'POST',
@@ -1181,7 +1181,7 @@ new ApiCheck('get-getmpciirrigationpractices-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciIrrigationPractices',
     method: 'GET',
@@ -1204,7 +1204,7 @@ new ApiCheck('post-getmpciprogramindicatorcodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciProgramIndicatorCodes',
     method: 'POST',
@@ -1227,7 +1227,7 @@ new ApiCheck('get-getmpcitypes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTypes',
     method: 'GET',
@@ -1250,7 +1250,7 @@ new ApiCheck('post-getmpcipricingdefaults-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPricingDefaults',
     method: 'POST',
@@ -1273,7 +1273,7 @@ new ApiCheck('get-getgrids-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetGrids',
     method: 'GET',
@@ -1296,7 +1296,7 @@ new ApiCheck('get-getmpcicontractprice-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciContractPrice',
     method: 'GET',
@@ -1319,7 +1319,7 @@ new ApiCheck('get-getmpciyieldtypenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciYieldTypeNames',
     method: 'GET',
@@ -1342,7 +1342,7 @@ new ApiCheck('get-getmpcicontiguouscounties-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciContiguousCounties',
     method: 'GET',
@@ -1365,7 +1365,7 @@ new ApiCheck('post-getmpciinsuranceplannames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsurancePlanNames',
     method: 'POST',
@@ -1388,7 +1388,7 @@ new ApiCheck('get-getstatecentroids-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetStateCentroids',
     method: 'GET',
@@ -1411,7 +1411,7 @@ new ApiCheck('get-getmpcistatenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciStateNames',
     method: 'GET',
@@ -1434,7 +1434,7 @@ new ApiCheck('get-getmpciintervalnames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciIntervalNames',
     method: 'GET',
@@ -1457,7 +1457,7 @@ new ApiCheck('post-getmpciinsuranceplans-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsurancePlans',
     method: 'POST',
@@ -1480,7 +1480,7 @@ new ApiCheck('get-getmpcicommoditynames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCommodityNames',
     method: 'GET',
@@ -1503,7 +1503,7 @@ new ApiCheck('get-getmpcicroppingpractices-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCroppingPractices',
     method: 'GET',
@@ -1526,7 +1526,7 @@ new ApiCheck('post-getmpcicountynames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCountyNames',
     method: 'POST',
@@ -1549,7 +1549,7 @@ new ApiCheck('post-getmpcipricediscoveryinfo-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceDiscoveryInfo',
     method: 'POST',
@@ -1572,7 +1572,7 @@ new ApiCheck('get-getmpcipreventedplantavailability-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPreventedPlantAvailability',
     method: 'GET',
@@ -1595,7 +1595,7 @@ new ApiCheck('post-getmpcisections-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciSections',
     method: 'POST',
@@ -1618,7 +1618,7 @@ new ApiCheck('post-getmpcipreventedplantavailability-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPreventedPlantAvailability',
     method: 'POST',
@@ -1641,7 +1641,7 @@ new ApiCheck('post-getmpcidollaramountofinsurance-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciDollarAmountOfInsurance',
     method: 'POST',
@@ -1664,7 +1664,7 @@ new ApiCheck('post-getmpciinsuranceoptionnames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsuranceOptionNames',
     method: 'POST',
@@ -1687,7 +1687,7 @@ new ApiCheck('get-getmpcitaxidtypenames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTaxIdTypeNames',
     method: 'GET',
@@ -1710,7 +1710,7 @@ new ApiCheck('get-getmpcipriceandvolatility-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceAndVolatility',
     method: 'GET',
@@ -1733,7 +1733,7 @@ new ApiCheck('get-getmpcipricerounding-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceRounding',
     method: 'GET',
@@ -1756,7 +1756,7 @@ new ApiCheck('post-getmpciunitofmeasure-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciUnitOfMeasure',
     method: 'POST',
@@ -1779,7 +1779,7 @@ new ApiCheck('post-getmpcicoveragelevels-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCoverageLevels',
     method: 'POST',
@@ -1802,7 +1802,7 @@ new ApiCheck('get-getcountycentroids-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetCountyCentroids',
     method: 'GET',
@@ -1825,7 +1825,7 @@ new ApiCheck('get-getmpcityieldhistory-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTYieldHistory',
     method: 'GET',
@@ -1848,7 +1848,7 @@ new ApiCheck('get-getmpcipriceelectionrange-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceElectionRange',
     method: 'GET',
@@ -1871,7 +1871,7 @@ new ApiCheck('get-getmpcisections-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciSections',
     method: 'GET',
@@ -1894,7 +1894,7 @@ new ApiCheck('get-getmpcityield-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTYield',
     method: 'GET',
@@ -1917,7 +1917,7 @@ new ApiCheck('post-getmpciallcommoditiestypes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciAllCommoditiesTypes',
     method: 'POST',
@@ -1940,7 +1940,7 @@ new ApiCheck('get-getbulkmpcipricingdefaults-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetBulkMpciPricingDefaults',
     method: 'GET',
@@ -1963,7 +1963,7 @@ new ApiCheck('get-getmpcicounties-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCounties',
     method: 'GET',
@@ -1986,7 +1986,7 @@ new ApiCheck('post-getmpcityield-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciTYield',
     method: 'POST',
@@ -2009,7 +2009,7 @@ new ApiCheck('get-getrainfallreinsuranceyears-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetRainfallReinsuranceYears',
     method: 'GET',
@@ -2032,7 +2032,7 @@ new ApiCheck('get-getmpcipricetableauxiliarydata-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceTableAuxiliaryData',
     method: 'GET',
@@ -2055,7 +2055,7 @@ new ApiCheck('get-getmpcidollaramountofinsurance-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciDollarAmountOfInsurance',
     method: 'GET',
@@ -2078,7 +2078,7 @@ new ApiCheck('get-getmpcisubcountycodes-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciSubCountyCodes',
     method: 'GET',
@@ -2101,7 +2101,7 @@ new ApiCheck('get-getmpcicoveragelevels-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCoverageLevels',
     method: 'GET',
@@ -2124,7 +2124,7 @@ new ApiCheck('get-getmpcipricingdefaults-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPricingDefaults',
     method: 'GET',
@@ -2147,7 +2147,7 @@ new ApiCheck('post-getmpciunitstructures-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciUnitStructures',
     method: 'POST',
@@ -2170,7 +2170,7 @@ new ApiCheck('get-getbulkmpciinsuranceoptions-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetBulkMpciInsuranceOptions',
     method: 'GET',
@@ -2193,7 +2193,7 @@ new ApiCheck('post-getmpcisalesclosingdates-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciSalesClosingDates',
     method: 'POST',
@@ -2216,7 +2216,7 @@ new ApiCheck('get-getmpciinsuranceplannames-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsurancePlanNames',
     method: 'GET',
@@ -2239,7 +2239,7 @@ new ApiCheck('get-getmpcicommodities-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciCommodities',
     method: 'GET',
@@ -2262,7 +2262,7 @@ new ApiCheck('get-getmpciranges-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciRanges',
     method: 'GET',
@@ -2285,7 +2285,7 @@ new ApiCheck('post-getmpciplanelections-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPlanElections',
     method: 'POST',
@@ -2308,7 +2308,7 @@ new ApiCheck('get-getmpciinsuranceplans-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciInsurancePlans',
     method: 'GET',
@@ -2331,7 +2331,7 @@ new ApiCheck('post-getmpcipriceelectionrange-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceElectionRange',
     method: 'POST',
@@ -2354,7 +2354,7 @@ new ApiCheck('post-getmpcipriceandvolatility-2001', {
     entrypoint: path.join(__dirname, '../utils/setup.ts'),
   },
   frequency: 5,
-  activated: true,
+  activated: false,
   request: {
     url: 'https://mpciquoterapi.wattsandassociates.com/api/2001/Lookups/GetMpciPriceAndVolatility',
     method: 'POST',

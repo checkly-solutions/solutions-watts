@@ -23,7 +23,7 @@ fs.readdir(directoryPath, (err, files) => {
   new BrowserCheck(fileNameWithoutExtension, {
       name: fileNameWithoutExtension,
       activated: true,
-      muted: true,
+      muted: false,
       shouldFail: false,
       runParallel: false,
       runtimeId: '2024.02',
