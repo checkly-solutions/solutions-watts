@@ -9,17 +9,22 @@ const accountID = process.env.CHECKLY_ACCOUNT_ID || 'none';
 test('test', async ({ page }) => {
   // Create context for issuing storate state update request
   const context = await createChecklyContext(apiKey, accountID);
-  // Sign into environment
+
+  test.setTimeout(60000);
   await page.goto('https://greenstone-uat.brisk.ag/');
 
-  signIn(page, userPass);
+  await signIn(page, userPass);
 
-  await page.waitForTimeout(5000);
+  // await page.getByRole('button', { name: 'Yes' }).click();
+
+  // await page.waitForTimeout(10000);
 
   // Get session storage and store as env variable
   const sessionStorage = await page.evaluate(() => {
     return { ...sessionStorage };
   });
+
+  console.log(await sessionStorage, 'session storage');
 
   const oidcKey = Object.keys(sessionStorage).find((key) => key.startsWith('oidc.user'));
 
