@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { createChecklyContext } from '../../utils/checklyRequestContext';
 import { signIn, sessionHandler } from '../../utils/auth-client';
 
+const envVariableName = 'UAT_GREENSTONE_TOKEN'
 const userPass = process.env.WATTS_CLIENT_PASS_MS || 'none';
 const apiKey = process.env.TOKEN_WRITER_API_KEY || 'none';
 const accountID = process.env.CHECKLY_ACCOUNT_ID || 'none';
@@ -19,9 +20,9 @@ test('test', async ({ page }) => {
 
     // Store the token in context
   if (accessToken) {
-    context.put('variables/UAT_GREENSTONE_TOKEN', {
+    context.put(`variables/${envVariableName}`, {
       data: {
-        key: `UAT_GREENSTONE_TOKEN`,
+        key: `${envVariableName}`,
         value: `${accessToken}`,
       },
     });
