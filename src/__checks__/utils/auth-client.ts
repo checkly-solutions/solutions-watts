@@ -55,4 +55,5 @@ export async function sessionHandler(page) {
   } else {
     console.error('Key starting with "oidc.user" not found in session storage.');
   }
+  
 }
