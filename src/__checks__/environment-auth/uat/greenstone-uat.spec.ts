@@ -2,23 +2,25 @@ import { test, expect } from '@playwright/test';
 import { createChecklyContext } from '../../utils/checklyRequestContext';
 import { signIn, sessionHandler } from '../../utils/auth-client';
 
-const envVariableName = 'UAT_GREENSTONE_TOKEN'
+const envName = 'Greenstone UAT'
+const envUrl = 'https://greenstone-uat.brisk.ag/';
+const envVariableName = 'UAT_GREENSTONE_TOKEN';
 const userPass = process.env.WATTS_CLIENT_PASS_MS || 'none';
 const apiKey = process.env.TOKEN_WRITER_API_KEY || 'none';
 const accountID = process.env.CHECKLY_ACCOUNT_ID || 'none';
 
-test('test', async ({ page }) => {
+test(`${envName} token update`, async ({ page }) => {
   // Create context for issuing storate state update request
   const context = await createChecklyContext(apiKey, accountID);
 
-  test.setTimeout(60000);
-  await page.goto('https://greenstone-uat.brisk.ag/');
+  test.setTimeout(45000);
+  await page.goto(`${envUrl}`);
 
   await signIn(page, userPass);
 
-  let accessToken = await sessionHandler(page)
+  let accessToken = await sessionHandler(page);
 
-    // Store the token in context
+  // Store the token in context
   if (accessToken) {
     context.put(`variables/${envVariableName}`, {
       data: {
@@ -29,5 +31,4 @@ test('test', async ({ page }) => {
   } else {
     console.error('Access token is not available for context storage.');
   }
-
 });
