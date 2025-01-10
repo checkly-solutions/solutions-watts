@@ -17,6 +17,7 @@ test(`${envName} token update`, async ({ page }) => {
   await page.goto(`${envUrl}`);
 
   await signIn(page, userPass);
+  await page.waitForTimeout(10000);
 
   let accessToken = await sessionHandler(page);
 
