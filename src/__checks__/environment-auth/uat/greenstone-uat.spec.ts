@@ -29,42 +29,60 @@ test('test', async ({ page }) => {
   const response = await responsePromise;
 
   console.log(response.status(), ' success!');
+
+  await page.waitForTimeout(5000);
   // Retrieve cookies from the browser context
-  const cookies = await page.context().cookies();
-
-  console.log(cookies, 'Browser Cookies');
-
-  // array.find(obj => obj.id === 2);
-  const persistingToken = cookies.find((cookie) => (cookie.name = 'ESTSAUTHPERSISTENT'));
-
-  const persistingTokenStringified = JSON.stringify(persistingToken);
-
-  console.log(persistingTokenStringified, 'persistingTokenStringified');
-
-  let responseContent;
-  try {
-    responseContent = await context.put('variables/UAT_GREENSTONE_TOKEN', {
-      data: {
-        key: `UAT_GREENSTONE_TOKEN`,
-        value: `${persistingTokenStringified}`,
-      },
-    });
-
-    // Check the status of the response
-    if (responseContent.status() > 200) {
-      throw new Error(`Error: Received status ${responseContent.status}`);
-    }
-
-    // Proceed with further logic if the status is 200 or less
-    console.log('Token persisted successfully');
-  } catch (error) {
-    // Handle the error
-    console.error('An error occurred:', error.message);
-  }
-
-  console.log(responseContent, 'storage JSON');
+  // const cookies = await page.context().cookies();
+  // console.log(cookies, 'Browser Cookies');
 
   await page.getByRole('button', { name: 'Yes' }).click();
 
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(10000);
+
+  // Get session storage and store as env variable
+  const sessionStorage = await page.evaluate(() => {
+    return { ...sessionStorage };
+  });
+
+  console.log(await sessionStorage, 'session storage');
+
+  const oidcKey = Object.keys(sessionStorage).find((key) => key.startsWith('oidc.user'));
+
+  let accessToken;
+
+  if (oidcKey) {
+    const sessionData = sessionStorage[oidcKey];
+    try {
+      const parsedData = JSON.parse(sessionData); // Parse the JSON string
+      accessToken = parsedData.access_token; // Assign the access token to the outer variable
+      console.log('Access Token:', accessToken);
+    } catch (error) {
+      console.error('Error parsing session data:', error);
+    }
+  } else {
+    console.error('Key starting with "oidc.user" not found in session storage.');
+  }
+
+  // Store the token in context
+  if (accessToken) {
+    context.put('variables/UAT_GREENSTONE_TOKEN', {
+      data: {
+        key: `UAT_GREENSTONE_TOKEN`,
+        value: `${accessToken}`,
+      },
+    });
+  } else {
+    console.error('Access token is not available for context storage.');
+  }
+
+  await request.get(
+    'https://mpciquoterapi-uat.wattsandassociates.com/api/4001/Lookups/GetMpciStates?ReinsuranceYear=2024',
+    {
+      headers: 
+        {
+          isbn: '1234',
+          page: 23,
+        }
+    }
+  );
 });
