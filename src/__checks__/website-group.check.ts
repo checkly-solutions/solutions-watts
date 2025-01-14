@@ -26,7 +26,7 @@ export const authProductionGroup = new CheckGroup('watts-auth-production-1', {
   muted: false,
   frequency: 5,
   runtimeId: '2024.02',
-  locations: ['us-east-1', 'eu-west-1'],
+  locations: ['us-east-1', 'us-west-1'],
   tags: ['mac', 'group'],
   environmentVariables: [],
   apiCheckDefaults: {},
