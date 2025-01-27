@@ -17,7 +17,7 @@ new ApiCheck('get-mpci-states', {
     // headers: [
     //   {
     //     key: 'Authorization',
-    //     value: 'Bearer {{{WATTS_TOKEN}}}',
+    //     value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
     //   },
     // ],
     followRedirects: true,
@@ -45,7 +45,7 @@ new ApiCheck('get-mpci-counties', {
     // headers: [
     //   {
     //     key: 'Authorization',
-    //     value: 'Bearer {{{WATTS_TOKEN}}}',
+    //     value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
     //   },
     // ],
     body: `{
@@ -80,7 +80,7 @@ new ApiCheck('get-mpci-commodities', {
     // headers: [
     //   {
     //     key: 'Authorization',
-    //     value: 'Bearer {{{WATTS_TOKEN}}}',
+    //     value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
     //   },
     // ],
     body: ``,
@@ -450,7 +450,7 @@ new ApiCheck('post--api-tenantId-Analytics-CalculateBackcasts', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer WATTS_TOKEN',
+        value: 'Bearer {{PROD_TRAINING_TOKEN',
       },
     ],
     followRedirects: true,
@@ -480,7 +480,7 @@ new ApiCheck('post--api-tenantId-Analytics-CalculateIndemnityScenarios', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer WATTS_TOKEN',
+        value: 'Bearer PROD_TRAINING_TOKEN',
       },
     ],
     followRedirects: true,

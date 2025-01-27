@@ -15,7 +15,7 @@ new ApiCheck('post-calculateindemnityscenarios-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',

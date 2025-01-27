@@ -4,7 +4,7 @@ import {
   EmailAlertChannel,
   SlackAlertChannel,
   WebhookAlertChannel,
-  
+
 } from 'checkly/constructs'
 
 const sendDefaults = {
@@ -16,17 +16,17 @@ const sendDefaults = {
 }
 
 export const smsChannel = new SmsAlertChannel('sms-channel-1', {
-  phoneNumber: '0031061234567890',
+  phoneNumber: '18065530352',
   ...sendDefaults
 })
 
 export const emailChannel = new EmailAlertChannel('email-channel-1', {
-  address: 'alerts@acme.com',
+  address: 'dholeman@wattsandassociates.com',
   ...sendDefaults
 })
 
 export const slackChannel = new SlackAlertChannel('slack-channel-1', {
-  url: new URL('https://hooks.slack.com/services/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'),
+  url: new URL('https://hooks.slack.com/services/T087JQRV6DA/8295770176611/119cdb9f8fd01bacdb37d53a7f6b9cf0'),
   channel: '#ops',
   ...sendDefaults
 })

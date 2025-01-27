@@ -19,7 +19,7 @@ fs.readdir(directoryPath, (err, files) => {
     const fileNameWithoutExtension = path.parse(file).name;
 
     // Create a Browser instance
-  new BrowserCheck(fileNameWithoutExtension, {
+    new BrowserCheck(fileNameWithoutExtension, {
       name: fileNameWithoutExtension,
       activated: true,
       muted: false,
@@ -29,7 +29,7 @@ fs.readdir(directoryPath, (err, files) => {
       alertChannels,
       locations: ['us-west-1', 'us-east-1'],
       tags: ['uat', 'auth'],
-      frequency: 10,
+      frequency: 5,
       environmentVariables: [],
       group: authStagingGroup,
       code: {

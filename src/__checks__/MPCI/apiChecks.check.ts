@@ -15,7 +15,7 @@ new ApiCheck('post-calculatewfrppremium-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -39,7 +39,7 @@ new ApiCheck('post-getinsurableunits-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -62,7 +62,7 @@ new ApiCheck('post-calculateunitquotes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -85,7 +85,7 @@ new ApiCheck('post-calculateunityields-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -108,7 +108,7 @@ new ApiCheck('post-calculatepolicyquotes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -131,7 +131,7 @@ new ApiCheck('post-token-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -154,7 +154,7 @@ new ApiCheck('get-health-2001-briskanalyticsapi', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -177,7 +177,7 @@ new ApiCheck('get-health-2001-briskpassapi', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
