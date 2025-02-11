@@ -43,7 +43,7 @@ export async function sessionHandler(page) {
   const oidcKey = Object.keys(sessionStorage).find((key) => key.startsWith('oidc.user'));
 
   if (oidcKey) {
-    const sessionData = sessionStorage[oidcKey];
+    const sessionData = sessionStorage [oidcKey];
     try {
       const parsedData = JSON.parse(sessionData); // Parse the JSON string
       let accessToken = parsedData.access_token; // Assign the access token to the outer variable

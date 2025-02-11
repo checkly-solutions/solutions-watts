@@ -21,14 +21,16 @@ test(`${envName} token update`, async ({ page }) => {
 
   let accessToken = await sessionHandler(page);
 
-  // Store the token in context
+  // This has updated handling for logging the response appropriately
   if (accessToken) {
-    context.put(`variables/${envVariableName}`, {
+    const response = await context.put(`variables/${envVariableName}`, {
       data: {
         key: `${envVariableName}`,
         value: `${accessToken}`,
       },
     });
+
+    console.log(response.status, 'status')
   } else {
     console.error('Access token is not available for context storage.');
   }
