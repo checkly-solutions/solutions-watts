@@ -72,7 +72,7 @@ async function fetchChecks(url) {
           headers: [
             {
               key: 'Authorization',
-              value: 'Bearer {{{WATTS_TOKEN}}}',
+              value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
             },
           ],
           bodyType: 'JSON',
@@ -89,7 +89,7 @@ async function fetchChecks(url) {
         let tags = [];
         let url
         // Replace tenantid substring with 2001
-        
+
         if (check.request.url.includes('{tenantId}')) {
           check.request.url = check.request.url.replace('{tenantId}', '2001');
         }

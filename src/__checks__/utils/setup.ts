@@ -18,9 +18,9 @@ export async function getToken() {
   }
 }
 
-async function setup () {
-  const token = await getToken()
-  request.headers['Authorization'] = 'Bearer ' + token
+async function setup() {
+  //const token = await getToken()
+  //request.headers['Authorization'] = 'Bearer ' + token
 }
 
 await setup()

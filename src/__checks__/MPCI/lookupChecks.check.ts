@@ -15,7 +15,7 @@ new ApiCheck('get-getmpciunitstructures-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -38,7 +38,7 @@ new ApiCheck('get-getmpciinsuranceoptions-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -61,7 +61,7 @@ new ApiCheck('post-getmpciinsuranceoptions-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -84,7 +84,7 @@ new ApiCheck('get-getmpciassociatedplans-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -107,7 +107,7 @@ new ApiCheck('post-getmpciassociatedplans-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -130,7 +130,7 @@ new ApiCheck('get-getmpcisalesclosingdates-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -153,7 +153,7 @@ new ApiCheck('get-getmpcistates-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -176,7 +176,7 @@ new ApiCheck('post-getmpcicounties-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -199,7 +199,7 @@ new ApiCheck('get-getmpcipractices-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -222,7 +222,7 @@ new ApiCheck('post-getmpcicommodities-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -245,7 +245,7 @@ new ApiCheck('post-getmpcitypes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -268,7 +268,7 @@ new ApiCheck('post-getmpcipractices-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -291,7 +291,7 @@ new ApiCheck('post-getmpcityieldhistory-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -314,7 +314,7 @@ new ApiCheck('post-getmpcisubcountycodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -337,7 +337,7 @@ new ApiCheck('get-getmpcicoveragetypecodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -360,7 +360,7 @@ new ApiCheck('get-getmpcimultiplecroppingavailability-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -383,7 +383,7 @@ new ApiCheck('post-getmpcicoveragetypecodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -406,7 +406,7 @@ new ApiCheck('get-getmpciprogramindicatorcodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -429,7 +429,7 @@ new ApiCheck('post-getmpcimultiplecroppingavailability-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -452,7 +452,7 @@ new ApiCheck('post-getmpcitownships-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -475,7 +475,7 @@ new ApiCheck('get-getmpcitownships-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -498,7 +498,7 @@ new ApiCheck('post-getmpciranges-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -521,7 +521,7 @@ new ApiCheck('get-getmpciunitofmeasure-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -544,7 +544,7 @@ new ApiCheck('post-getmpcicontractprice-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -567,7 +567,7 @@ new ApiCheck('get-getmpcipricediscoveryinfo-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -590,7 +590,7 @@ new ApiCheck('get-getmpciallcommoditiestypes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -613,7 +613,7 @@ new ApiCheck('get-getmpcirangeclasses-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -636,7 +636,7 @@ new ApiCheck('get-getmpciorganicpractices-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -659,7 +659,7 @@ new ApiCheck('get-getmpcicountyexpectedyields-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -682,7 +682,7 @@ new ApiCheck('get-getmpcicottonseedpublishedvalues-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -705,7 +705,7 @@ new ApiCheck('get-getmpciintendeduses-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -728,7 +728,7 @@ new ApiCheck('get-getmpcirainfallindexintervaldetails-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -751,7 +751,7 @@ new ApiCheck('get-getmpciyielddollarparameters-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -774,7 +774,7 @@ new ApiCheck('get-getmpcicommodityinsuranceoffers-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -797,7 +797,7 @@ new ApiCheck('post-getmpcistatenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -820,7 +820,7 @@ new ApiCheck('get-getmpciinsuranceoptioncodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -843,7 +843,7 @@ new ApiCheck('get-getmpcicountynames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -866,7 +866,7 @@ new ApiCheck('post-getmpcicommoditynames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -889,7 +889,7 @@ new ApiCheck('get-getmpcipracticenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -912,7 +912,7 @@ new ApiCheck('post-getmpcipracticenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -935,7 +935,7 @@ new ApiCheck('post-getmpcitypenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -958,7 +958,7 @@ new ApiCheck('get-getmpcitypenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -981,7 +981,7 @@ new ApiCheck('get-getmpciinsuranceoptionnames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1004,7 +1004,7 @@ new ApiCheck('get-getmpciproductionrecordtypenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1027,7 +1027,7 @@ new ApiCheck('get-getmpciintendedusenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1050,7 +1050,7 @@ new ApiCheck('get-getmpcientitytypenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1073,7 +1073,7 @@ new ApiCheck('get-getmpciorganicpracticenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1096,7 +1096,7 @@ new ApiCheck('get-getmpciirrigationpracticenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1119,7 +1119,7 @@ new ApiCheck('get-getcountiesbygrid-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1142,7 +1142,7 @@ new ApiCheck('get-getintervalscountybasevalue-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1165,7 +1165,7 @@ new ApiCheck('post-getmpcistates-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1188,7 +1188,7 @@ new ApiCheck('get-getmpciirrigationpractices-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1211,7 +1211,7 @@ new ApiCheck('post-getmpciprogramindicatorcodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1234,7 +1234,7 @@ new ApiCheck('get-getmpcitypes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1257,7 +1257,7 @@ new ApiCheck('post-getmpcipricingdefaults-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1280,7 +1280,7 @@ new ApiCheck('get-getgrids-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1303,7 +1303,7 @@ new ApiCheck('get-getmpcicontractprice-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1326,7 +1326,7 @@ new ApiCheck('get-getmpciyieldtypenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1349,7 +1349,7 @@ new ApiCheck('get-getmpcicontiguouscounties-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1372,7 +1372,7 @@ new ApiCheck('post-getmpciinsuranceplannames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1395,7 +1395,7 @@ new ApiCheck('get-getstatecentroids-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1418,7 +1418,7 @@ new ApiCheck('get-getmpcistatenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1441,7 +1441,7 @@ new ApiCheck('get-getmpciintervalnames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1464,7 +1464,7 @@ new ApiCheck('post-getmpciinsuranceplans-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1487,7 +1487,7 @@ new ApiCheck('get-getmpcicommoditynames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1510,7 +1510,7 @@ new ApiCheck('get-getmpcicroppingpractices-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1533,7 +1533,7 @@ new ApiCheck('post-getmpcicountynames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1556,7 +1556,7 @@ new ApiCheck('post-getmpcipricediscoveryinfo-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1579,7 +1579,7 @@ new ApiCheck('get-getmpcipreventedplantavailability-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1602,7 +1602,7 @@ new ApiCheck('post-getmpcisections-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1625,7 +1625,7 @@ new ApiCheck('post-getmpcipreventedplantavailability-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1648,7 +1648,7 @@ new ApiCheck('post-getmpcidollaramountofinsurance-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1671,7 +1671,7 @@ new ApiCheck('post-getmpciinsuranceoptionnames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1694,7 +1694,7 @@ new ApiCheck('get-getmpcitaxidtypenames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1717,7 +1717,7 @@ new ApiCheck('get-getmpcipriceandvolatility-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1740,7 +1740,7 @@ new ApiCheck('get-getmpcipricerounding-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1763,7 +1763,7 @@ new ApiCheck('post-getmpciunitofmeasure-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1786,7 +1786,7 @@ new ApiCheck('post-getmpcicoveragelevels-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1809,7 +1809,7 @@ new ApiCheck('get-getcountycentroids-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1832,7 +1832,7 @@ new ApiCheck('get-getmpcityieldhistory-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1855,7 +1855,7 @@ new ApiCheck('get-getmpcipriceelectionrange-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1878,7 +1878,7 @@ new ApiCheck('get-getmpcisections-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1901,7 +1901,7 @@ new ApiCheck('get-getmpcityield-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1924,7 +1924,7 @@ new ApiCheck('post-getmpciallcommoditiestypes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1947,7 +1947,7 @@ new ApiCheck('get-getbulkmpcipricingdefaults-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1970,7 +1970,7 @@ new ApiCheck('get-getmpcicounties-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -1993,7 +1993,7 @@ new ApiCheck('post-getmpcityield-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2016,7 +2016,7 @@ new ApiCheck('get-getrainfallreinsuranceyears-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2039,7 +2039,7 @@ new ApiCheck('get-getmpcipricetableauxiliarydata-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2062,7 +2062,7 @@ new ApiCheck('get-getmpcidollaramountofinsurance-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2085,7 +2085,7 @@ new ApiCheck('get-getmpcisubcountycodes-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2108,7 +2108,7 @@ new ApiCheck('get-getmpcicoveragelevels-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2131,7 +2131,7 @@ new ApiCheck('get-getmpcipricingdefaults-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2154,7 +2154,7 @@ new ApiCheck('post-getmpciunitstructures-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2177,7 +2177,7 @@ new ApiCheck('get-getbulkmpciinsuranceoptions-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2200,7 +2200,7 @@ new ApiCheck('post-getmpcisalesclosingdates-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2223,7 +2223,7 @@ new ApiCheck('get-getmpciinsuranceplannames-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2246,7 +2246,7 @@ new ApiCheck('get-getmpcicommodities-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2269,7 +2269,7 @@ new ApiCheck('get-getmpciranges-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2292,7 +2292,7 @@ new ApiCheck('post-getmpciplanelections-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2315,7 +2315,7 @@ new ApiCheck('get-getmpciinsuranceplans-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2338,7 +2338,7 @@ new ApiCheck('post-getmpcipriceelectionrange-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
@@ -2361,7 +2361,7 @@ new ApiCheck('post-getmpcipriceandvolatility-2001', {
     headers: [
       {
         key: 'Authorization',
-        value: 'Bearer {{{WATTS_TOKEN}}}',
+        value: 'Bearer {{{PROD_TRAINING_TOKEN}}}',
       },
     ],
     bodyType: 'JSON',
