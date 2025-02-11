@@ -1,6 +1,7 @@
 import { AlertEscalationBuilder, CheckGroup, RetryStrategyBuilder } from 'checkly/constructs'
-import { smsChannel, emailChannel } from '../alert-channels'
-const alertChannels = [smsChannel, emailChannel]
+import { teamsWebhookChannel } from '../alert-channels'
+
+const alertChannels = [teamsWebhookChannel]
 
 export const websiteGroup = new CheckGroup('website-check-group-1', {
   name: 'Watts Group',
@@ -20,6 +21,7 @@ export const websiteGroup = new CheckGroup('website-check-group-1', {
   runParallel: false,
   // privateLocations: ['private-infra']
 })
+
 export const authProductionGroup = new CheckGroup('watts-auth-production-1', {
   name: 'Watts Auth Production',
   activated: true,
