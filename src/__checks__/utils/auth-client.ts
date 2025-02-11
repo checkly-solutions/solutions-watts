@@ -53,7 +53,7 @@ export async function sessionHandler(page) {
       throw new Error('Error parsing session data:', error);
     }
   } else {
-    throw new Error('Key starting with "oidc.user" not found in session storage.';
+    throw new Error('Key starting with "oidc.user" not found in session storage.')
   }
   
 }
