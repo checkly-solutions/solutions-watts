@@ -50,10 +50,10 @@ export async function sessionHandler(page) {
       console.log('Access Token:', accessToken);
       return accessToken;
     } catch (error) {
-      console.error('Error parsing session data:', error);
+      throw new Error('Error parsing session data:', error);
     }
   } else {
-    console.error('Key starting with "oidc.user" not found in session storage.');
+    throw new Error('Key starting with "oidc.user" not found in session storage.';
   }
   
 }

@@ -29,6 +29,5 @@ test(`${envName} token update`, async ({ page }) => {
       },
     });
   } else {
-    console.error('Access token is not available for context storage.');
-  }
+    throw new Error('Access token is not available for context storage.');  }
 });
